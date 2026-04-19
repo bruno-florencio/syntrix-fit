@@ -2,9 +2,9 @@ import { Tabs } from 'expo-router';
 import React from 'react';
 
 import { HapticTab } from '@/components/haptic-tab';
-import { IconSymbol } from '@/components/ui/icon-symbol';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
+import { FontAwesome5, MaterialCommunityIcons } from '@expo/vector-icons';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -12,22 +12,37 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        tabBarActiveTintColor: Colors[colorScheme ?? 'dark'].tint,
+        tabBarStyle: { backgroundColor: Colors[colorScheme ?? 'dark'].background },
         headerShown: false,
         tabBarButton: HapticTab,
       }}>
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: 'Início',
+          tabBarIcon: ({ color }) => <FontAwesome5 size={24} name="home" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="workouts"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Treinos',
+          tabBarIcon: ({ color }) => <MaterialCommunityIcons size={28} name="weight-lifter" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="nutrition"
+        options={{
+          title: 'Nutrição',
+          tabBarIcon: ({ color }) => <MaterialCommunityIcons size={28} name="food-apple" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="store"
+        options={{
+          title: 'Loja',
+          tabBarIcon: ({ color }) => <FontAwesome5 size={24} name="shopping-bag" color={color} />,
         }}
       />
     </Tabs>

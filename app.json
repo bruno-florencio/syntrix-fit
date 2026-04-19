@@ -1,17 +1,19 @@
 {
   "expo": {
-    "name": "FitApp",
-    "slug": "FitApp",
+    "name": "Syntrix Fit",
+    "slug": "syntrix-fit",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "fitapp",
+    "scheme": "syntrix-fit",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.aksl.syntrix_fit",
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -27,6 +29,9 @@
     },
     "plugins": [
       "expo-router",
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth",
+      "@react-native-google-signin/google-signin",
       [
         "expo-splash-screen",
         {

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "287740732537",
+    "project_id": "syntrix-fit",
+    "storage_bucket": "syntrix-fit.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287740732537:android:11e378eec5d6b802e320a8",
+        "android_client_info": {
+          "package_name": "com.aksl.syntrix_fit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7cWgjgIhQGjEmpPd-5npd4_gd61PtXzI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
