@@ -305,12 +305,12 @@ export default function WorkoutBuilderScreen() {
             {(executionModalItem as any)?.freeDbId && (
               <View style={styles.imagesContainer}>
                 <Image 
-                  source={{ uri: `https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/${(executionModalItem as any).freeDbId}/0.jpg` }} 
+                  source={{ uri: `https://raw.githubusercontent.com/bruno-florencio/syntrix-fit/main/exercise-images/${(executionModalItem as any).freeDbId}/0.jpg` }} 
                   style={styles.executionImage} 
                   resizeMode="cover"
                 />
                 <Image 
-                  source={{ uri: `https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/${(executionModalItem as any).freeDbId}/1.jpg` }} 
+                  source={{ uri: `https://raw.githubusercontent.com/bruno-florencio/syntrix-fit/main/exercise-images/${(executionModalItem as any).freeDbId}/1.jpg` }} 
                   style={styles.executionImage} 
                   resizeMode="cover"
                 />
